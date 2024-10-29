@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>
+            Employee_Details
+        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <form action="/action_page.php">
+            <table width="800px" height="auto" align="center">
+                <tr>
+                    <td>
+                        <a href="#">Home</a> >
+                        <a href="#">Emp</a> >
+                        Edit Details
+                    </td>
+                    <td align="right">
+                        <img src="" alt="MulikaInfo" width="250px" height="auto">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <h2>Emp Details:</h2>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Personal Details:</legend>
+                            <table width="500px" height="300px" >
+                                <tr>
+                                    <td>
+                                        <label for="fname">First Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="fname" name="personal_detail[fname]" placeholder="Enter First Name" margin="150px left">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="mname">Middle Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="mname" name="personal_detail[mname]" placeholder="Enter Middle Name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="lname">Last Name</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="lname" name="personal_detail[lname]" placeholder="Enter Last Name">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="photo">Photo</label>
+                                    </td>
+                                    <td>
+                                        <input type="file" id="photo" name="personal_detail[photo]" placeholder="Select">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="gender">Gender</label>
+                                    </td>
+                                    <td>
+                                        <input type="radio" id="female" name="personal_detail[gender]" value="Female">
+                                        <label for="female">Female</label> 
+                                    
+                                        <input type="radio" id="male" name="personal_detail[gender]" value="Male">
+                                        <label for="male">Male</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="dob">DOB</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="dd" name="personal_detail[dd]" placeholder="DD" size="2">
+                                        <input type="text" id="mm" name="personal_detail[mm]" placeholder="MM" size="2">
+                                        <input type="text" id="yy" name="personal_detail[yy]" placeholder="YY" size="2">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Contact Detail:</legend>
+                            <table width="500px" height="300px">
+                                <tr>
+                                    <td>
+                                        <label for="mob">Mobile Number</label>
+                                    </td>
+                                    <td>    
+                                        <input type="text" id="mob" name="contact_detail[mob]" placeholder="Enter Monile Number" patter="[0-9]{10}" maxlength="10" minlength="10">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="mail">Email</label>
+                                    </td>
+                                    <td>    
+                                        <input type="email" id="mail" name="contact_detail[mail]" placeholder="Enter Email">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="country">Country</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="country" name="contact_detail[country]" placeholder="Enter Country">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="state">State</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="state" name="contact_detail[state]" placeholder="Enter State">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="city">City</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="city" name="contact_detail[city]" placeholder="Enter City">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="addr">Address</label>
+                                    </td>
+                                    <td>
+                                        <input type="text" id="addr" name="contact_detail[addr]" placeholder="Enter Address">
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <fieldset>
+                            <legend>Educational Details:</legend>
+                            <table width="500px" height="300px">
+                                <tr>
+                                    <td>
+                                        <label for="uni">University</label>
+                                    </td>
+                                    <td>
+                                        <select name="uni" id="uni">
+                                            <option value="">Select</option>
+                                            <option value="DBATU">DBA Techno. University</option>
+                                            <option value="BAMU">BAMU</option>
+                                            <option value="JNU">JNU</option>
+                                            <option value="MIT">MIT</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="grad">Graduation</label>
+                                    </td>
+                                    <td>
+                                        <select name="grad" id="grad" >
+                                            <option value="">Select</option>
+                                            <option value="BTech">Bachelor of Technology</option>
+                                            <option value="MTech">M.Tech</option>
+                                            <option value="BAMU">BAMU</option>
+                                            <option value="BCA">BCA</option>
+                                            <option value="MCA">MCA</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="cb">University</label>
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="cb" name="cb">
+                                        <label for="cb">Same as Graduation</label> 
+                                    </td>
+                                </tr>
+                                <tr>    
+                                    <td>
+
+                                    </td>  
+                                    <td>
+                                        <select name="grad" id="grad" >
+                                            <option value="">Select</option>
+                                            <option value="BTech">BBachelor of Technology</option>
+                                            <option value="MTech">M.Tech</option>
+                                            <option value="BAMU">BAMU</option>
+                                            <option value="BCA">BCA</option>
+                                            <option value="MCA">MCA</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="pg">Post Graduation</label>
+                                    </td>
+                                    <td>
+                                        <select name="pg" id="pg">
+                                            <option value="">Select</option>
+                                            <option value="BTech">Bachelor of Technology</option>
+                                            <option value="MTech">M.Tech</option>
+                                            <option value="BAMU">BAMU</option>
+                                            <option value="BCA">BCA</option>
+                                            <option value="MCA">MCA</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="hobbies">Hobbies</label>
+                                    </td>
+                                    <td>
+                                        <select name="hobbies" id="hobbies">
+                                            <optgroup label="Entertainment">
+                                                <option value="">Entertainment</option>
+                                                <option value="dancing">Dancing</option>
+                                                <option value="singing">Singing</option>
+                                            </optgroup>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </fieldset>
+                    </td>
+                    <td>
+                        <fieldset>
+                            <legend>Attached documents and about you</legend>
+                            <table width="500px" height="300px">
+                                <tr>
+                                    <td>
+                                        <label for="docs">Documents</label>
+
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="dc" name="dc">
+                                        <label for="dc">Degree Certificate</label><br>
+                                        
+                                    </td>
+                                    
+                                </tr>
+                                <tr>
+                                    <td>
+                                       
+                                    </td>
+                                    <td>
+                                        <input type="checkbox" id="ip" name="ip">
+                                        <label for="ip">Identity Proof</label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="upload">Upload Document</label>
+                                    </td>
+                                    <td>
+                                        <input type="file" id="upload" name="upload" multiple placeholder="Upload Photo">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <label for="aboutYou">About You</label>
+                                    </td>
+                                    <td>
+                                        <textarea id="aboutYou" name="aboutYou" row="10" cols="20" placeholder="Enter about you"></textarea>
+                                    </td>
+                                </tr>
+
+                            </table>
+                        </fieldset>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right">
+                        <input type="reset" value="Reset">
+                    </td>
+                    <td>
+                        <input type="submit" value="Submit">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
+
